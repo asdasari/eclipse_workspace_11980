@@ -1,0 +1,41 @@
+package java8features;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamPipeLineDemo {
+	public static void main(String[] args) {
+		List<Integer> salaries = Arrays.asList(50000,40000,20000,30000,60000);
+		System.out.println(salaries);
+		
+		/*
+		Task-1:
+		Filter the salaries which are >= 50000	
+		Increment the filtered salaries by 10% 	
+		Find the total of filtered and incremented salaries 
+		Expected Output: 121000
+		*/		
+		
+		double totalSalary = salaries.stream()			//Source
+				.filter((salary) -> salary >= 50000)	//Intermediate Operation-1
+				.map((salary) -> salary + salary * .1)	//Intermediate Operation-2
+				.mapToDouble(salary -> salary)			//Intermediate Operation-3
+				.sum();									//Terminal Operation
+		System.out.println(totalSalary);
+		
+		
+		/*
+		Task-2:
+		Increment the filtered salaries by 20% 	
+		Sort the incremented salaries in Descending
+		Expected Output: 
+		*/	
+		
+		List<Integer> incrementedSalaries = salaries.stream()
+				.filter((salary) -> salary <= 50000)
+				.sorted()
+				.toList();
+		System.out.println(incrementedSalaries);
+		
+	}
+}

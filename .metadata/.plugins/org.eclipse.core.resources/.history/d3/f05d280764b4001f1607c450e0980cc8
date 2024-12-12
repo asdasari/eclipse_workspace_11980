@@ -1,0 +1,12 @@
+package java8features;
+
+@FunctionalInterface
+interface MyFunctionalInterface{
+	void greet();
+}
+
+public class LambdaExpressions {
+	public static void main(String[] args) {
+		
+	}
+}

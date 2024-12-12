@@ -1,0 +1,5 @@
+
+public interface Printer {
+	void printJob();//implicitly public abstract
+	
+}

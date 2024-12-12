@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AuthServiceTest" project="maven_project1" tests="1" started="0" failures="0" errors="1" ignored="0">
+  <testsuite name="com.edubridge.maven_project1.AuthServiceTest" incomplete="true" displayname="AuthServiceTest" uniqueid="[engine:junit-jupiter]/[class:com.edubridge.maven_project1.AuthServiceTest]">
+    <error>org.junit.platform.commons.JUnitException: @BeforeAll method 'public void com.edubridge.maven_project1.AuthServiceTest.setup()' must be static unless the test class is annotated with @TestInstance(Lifecycle.PER_CLASS).&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+	at java.base/java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1117)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)&#13;
+&#13;
+</error>
+    <testcase name="testAuthenticateWithValidData" classname="com.edubridge.maven_project1.AuthServiceTest" incomplete="true" displayname="testAuthenticateWithValidData()" uniqueid="[engine:junit-jupiter]/[class:com.edubridge.maven_project1.AuthServiceTest]/[method:testAuthenticateWithValidData()]"/>
+  </testsuite>
+</testrun>

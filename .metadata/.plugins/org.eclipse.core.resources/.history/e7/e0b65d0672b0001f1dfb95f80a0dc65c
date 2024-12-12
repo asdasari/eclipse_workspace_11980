@@ -1,0 +1,14 @@
+
+//Introduced in java 8
+@FunctionalInterface
+public interface Printer {
+	void printJob();//implicitly public abstract
+	
+	default void scan() {
+		System.out.println("scan...");
+	}
+	
+	static void threeDPrint() {
+		System.out.println("3D print");
+	}
+}

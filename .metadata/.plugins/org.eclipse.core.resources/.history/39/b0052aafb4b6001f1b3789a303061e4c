@@ -1,0 +1,7 @@
+package com.edubridge.app2;
+
+public class CalcTest {
+	public static void main(String[] args) {
+		
+	}
+}

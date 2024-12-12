@@ -1,0 +1,21 @@
+package multithreading;
+
+//Creating user defined thread using Thread class
+class JavaThread extends Thread{
+	@Override
+	public void run() {
+		//define thread job
+		for(int i=1; i<=10; i++) {
+			System.out.println("Java-"+i);
+		}
+	}
+}
+
+public class ThreadDemo {
+	public static void main(String[] args) {
+		//main thread job
+		for(int i=1; i<=10; i++) {
+			System.out.println("Main-"+i);
+		}
+	}
+}

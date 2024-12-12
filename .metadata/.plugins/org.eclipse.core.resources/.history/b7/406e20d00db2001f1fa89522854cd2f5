@@ -1,0 +1,10 @@
+package exceptions;
+
+public class FinallyDemo {
+	public static void main(String[] args) {
+		System.out.println("start");
+		
+		System.out.println("Mandatory Code");
+		System.out.println("end");
+	}
+}

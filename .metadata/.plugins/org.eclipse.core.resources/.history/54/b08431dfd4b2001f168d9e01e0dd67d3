@@ -1,0 +1,14 @@
+package multithreading;
+
+class MulTable{
+	public void printMulTable(int num) {
+		for(int i=1; i<=10; i++) {
+			//10*1=10
+			System.out.println(num+"*"+i+"="+(num*i));
+		}
+	}
+}
+
+public class SynchronizationDemo {
+
+}

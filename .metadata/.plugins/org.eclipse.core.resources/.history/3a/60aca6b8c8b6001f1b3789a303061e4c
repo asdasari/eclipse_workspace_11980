@@ -1,0 +1,10 @@
+package myproject;
+
+public class EmployeeTest {
+	public static void main(String[] args) {
+		Employee e2 = new Employee(1, "Wills", 55000, "wills@gmail.com");
+		
+		Employee e1 = new Employee();
+
+	}
+}
